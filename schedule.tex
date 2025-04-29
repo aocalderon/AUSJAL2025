@@ -1,0 +1,56 @@
+\section{Project Gantt Chart (24-Month Schedule)}
+Figure \ref{fig:schedule} presents the two-year project schedule, describing the sequence and timing of key research phases, from data collection and preprocessing to case study analysis, stakeholder participation, and final dissemination. This Gantt chart provides a visual overview of the project's workflow and ensures alignment with the proposed objectives and deliverables.
+
+\newgeometry{left=1cm, bottom=0.6cm, right=0.5cm, top=1cm}
+\begin{landscape}
+    \begin{figure}[htb]
+        \centering
+        \begin{ganttchart}[
+            hgrid,
+            vgrid,
+            time slot format=isodate,
+            time slot format/start date=2026-01-01,
+            %compress calendar,
+            milestone label node/.append style={left=4mm},
+            milestone label font=\bfseries\footnotesize,
+            bar label font=\small\rmfamily,
+            bar/.append style={fill=blue!30},
+            group/.append style={fill=gray!20},
+            x unit=0.45cm,
+            y unit chart=0.8cm,
+            time slot unit=month
+        ]{2025-12-01}{2028-01-01}
+    
+            \gantttitle{Year 1}{13}
+            \gantttitle{Year 2}{13} \\
+            \gantttitlelist{ ,1,...,24, }{1} \\
+            
+            \ganttgroup{Phase 1: Planning and Data Collection}{2026-01-01}{2026-03-30}  \\
+            \ganttbar{Literature Review \& Data Gathering}{2026-01-01}{2026-03-30} \\
+            
+            \ganttgroup{Phase 2: Preprocessing and Setup}{2026-04-01}{2026-06-30} \\
+            \ganttbar{Fire Data Prep \& LULC Setup}{2026-04-01}{2026-06-30} \\
+            
+            \ganttgroup{Phase 3: Fire Mapping and Integration}{2026-07-01}{2026-09-30} \\
+            \ganttbar{Wildfire Mapping \& Correlation}{2026-07-01}{2026-09-30} \\
+            
+            \ganttgroup{Phase 4: LULC Change Detection}{2026-10-01}{2026-12-31} \\
+            \ganttbar{LULC Change Analysis}{2026-10-01}{2026-12-31} \\
+            
+            \ganttgroup{Phase 5: Case Studies}{2027-01-01}{2027-03-30} \\
+            \ganttbar{Salta, Córdoba, Sgo del Estero}{2027-01-01}{2027-03-30} \\
+            
+            \ganttgroup{Phase 6: Stakeholders \& Validation}{2027-04-01}{2027-06-30} \\
+            \ganttbar{Field Work \& Consultations}{2027-04-01}{2027-06-30} \\
+            
+            \ganttgroup{Phase 7: Final Analysis \& Outputs}{2027-07-01}{2027-09-30} \\
+            \ganttbar{Dashboard, Analysis, Writing}{2027-07-01}{2027-09-30} \\
+            
+            \ganttgroup{Phase 8: Dissemination}{2027-10-01}{2027-12-01} \\
+            \ganttbar{Workshops, Reports, Publication}{2027-10-01}{2027-12-01}
+        \end{ganttchart}
+        \caption{Schedule of Activities.} 
+        \label{fig:schedule}
+    \end{figure}
+\end{landscape}
+\restoregeometry

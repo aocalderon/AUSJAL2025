@@ -1,0 +1,33 @@
+\documentclass{nsf}
+
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{subfiles} 
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{datetime}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\renewcommand{\dateseparator}{-}
+
+% set a commom title that can be used by individual files
+\newcommand{\proposalTitle}{ Political-Ecological Analysis of Wildfires using Remote Sensing
+in Argentina.}
+
+\begin{document}
+    % Chapter II: Proposal Preparation Instructions
+    % https://new.nsf.gov/policies/pappg/24-1/ch-2-proposal-preparation
+
+    \input{objectives}
+    \input{relevance}
+    \input{conceptual}
+    \input{methodology}
+    \input{activities}
+    \input{results}
+    \input{budget}
+    \input{schedule}
+
+    \bibliographystyle{apalike} % or plainnat, ieee, etc.
+    \bibliography{references}
+\end{document}

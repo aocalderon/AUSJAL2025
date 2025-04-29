@@ -1,0 +1,58 @@
+\section{Methodology}
+
+The proposed research adopts a mixed-methods approach, combining quantitative geospatial analysis using remote sensing with qualitative political data integration and case study evaluation, to investigate the political-economic determinants of wildfires in Argentina. The methodology is structured to address the six specific objectives outlined in the project.
+
+\subsection{Data Collection and Preprocessing}
+
+The study will first collect and preprocess spatial and political data from multiple sources:
+
+\begin{itemize}
+    \item \textbf{Wildfire Data}: Satellite-derived fire occurrence datasets will be obtained from MODIS (MOD14A1), VIIRS (VNP14IMG), and NASA’s FIRMS platform. These will be processed using Google Earth Engine (GEE) to generate monthly and annual fire frequency rasters from 2001 to the present.
+    \item \textbf{Land Use and Land Cover (LULC)}: Pre- and post-fire imagery from Landsat 5/7/8 and Sentinel-2 will be acquired to analyze vegetation and land use transitions. Key indices such as NDVI, NBR, and dNBR will be calculated to evaluate fire severity and vegetation recovery.
+    \item \textbf{Political-Economic Data}: Information on subnational cabinet composition, political affiliations, and dominant economic sectors (e.g., agriculture, real estate, extractives) will be compiled from government records, academic publications, and NGOs. These data will be geocoded at the provincial level.
+    \item \textbf{Contextual Layers}: Ancillary spatial datasets (e.g., roads, protected areas, land tenure, indigenous territories, urban boundaries) will be sourced from Argentina’s National Geographic Institute (IGN), Global Forest Watch, and official cadastral systems.
+\end{itemize}
+
+\subsection{Fire Mapping and Spatial Analysis (O1, O2, O4)}
+
+Using the preprocessed fire and LULC datasets:
+\begin{itemize}
+    \item Wildfire occurrence will be mapped annually at the provincial level to observe spatio-temporal trends and identify high-burn zones.
+    \item Change detection techniques (e.g., post-classification comparison, time series NDVI drops) will be used to evaluate forest loss and post-fire land transformation.
+    \item Burned area metrics will be correlated with proximity to infrastructure (e.g., roads), urban expansion fronts, and land ownership patterns.
+    \item Fire severity and frequency metrics will be aggregated and linked to LULC transitions, especially the expansion of agriculture or urban development after fires.
+\end{itemize}
+
+\subsection{Political-Ecological Integration (O3, O4)}
+
+To explore the influence of political and economic interests:
+\begin{itemize}
+    \item A panel dataset will be constructed combining fire metrics, LULC changes, and political-economic variables across provinces and years.
+    \item Regression models (e.g., multilevel mixed-effects models) will be used to test whether the proportion of pro-business actors in provincial cabinets predicts wildfire occurrence or post-fire land use change.
+    \item Spatial regression and hotspot analysis (e.g., Getis-Ord Gi*) will be applied to identify clusters where wildfires align with political-economic variables (e.g., land speculation zones governed by extractive-friendly coalitions).
+\end{itemize}
+
+\subsection{Case Study Analysis (O5)}
+
+Three provincial case studies (Salta, Córdoba, and Santiago del Estero) will be selected based on fire intensity, political interest, and diversity of land use conflicts. For each case:
+\begin{itemize}
+    \item High-resolution imagery (e.g., PlanetScope, Google Earth Pro) will be used to analyze detailed patterns of land clearing post-fire.
+    \item Local documents, media reports, and secondary literature will be reviewed to trace specific events where wildfires preceded land transformation.
+    \item Interviews with local experts (subject to IRB approval) may be conducted to complement satellite findings and understand actor dynamics.
+\end{itemize}
+
+\subsection{Visualization and Dissemination (O6)}
+
+The project will culminate in the development of a geospatial database and a visual dashboard that integrates:
+\begin{itemize}
+    \item Maps of fire hotspots, land use change, and political alliances
+    \item Provincial profiles summarizing fire trends and political configurations
+    \item Tools for filtering data by year, region, or variable of interest
+\end{itemize}
+
+Final results will be disseminated through:
+\begin{itemize}
+    \item A policy brief aimed at environmental agencies and decision-makers
+    \item A peer-reviewed journal article
+    \item Stakeholder workshops in at least two provinces
+\end{itemize}

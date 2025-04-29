@@ -1,0 +1,44 @@
+\section{Expected Results and Deliverables}
+
+Table \ref{tab:results} presents the expected deliverables, including their associated phases, estimated completion timelines, and responsible teams involved in their production.
+
+\begin{table}
+    %\footnotesize
+    \begin{longtable}{@{} p{0.2cm} p{5cm} p{5cm} p{5cm} @{}}
+    \toprule
+     & \textbf{Product/Deliverable} & \textbf{Associated Activities} & \textbf{Details} \\
+    \midrule
+    \endfirsthead
+    \toprule
+     & \textbf{Product/Deliverable} & \textbf{Associated Activities} & \textbf{Details} \\
+    \midrule
+    \endhead
+        1 & Preprocessed Fire Datasets (MODIS, VIIRS, FIRMS) & O1: Acquire and preprocess fire data & Download and cleaning of raw satellite fire data; monthly/yearly raster layers. \\
+        
+        2 & Annual Wildfire Maps (2001--present) & O1: Generate annual wildfire maps by province and region & Spatial analysis of fire patterns across time. \\
+        
+        3 & Pre- and Post-Fire LULC Change Maps & O2: Download Landsat/Sentinel-2 images, Conduct change detection and supervised classification & Identify forest loss, agricultural expansion, and urbanization after wildfires. \\
+        
+        4 & Spatial Correlation Maps (fire activity vs. roads, tenure, political zones) & O4: Integrate spatial layers: roads, land tenure, protected areas & Spatial overlay analysis identifying high-risk and strategic zones. \\
+        
+        5 & Integrated Political-Fire Dataset (fire data + political/economic variables) & O3: Collect political-economic data, Geocode and link with fire data & Multiyear panel dataset correlating governance variables and fire occurrence. \\
+        
+        6 & Panel Data Analysis and Hotspot Reports & O3, O4: Regression models, spatial regression (Getis-Ord Gi*) & Quantitative outputs linking political power structures to fire patterns. \\
+        
+        7 & Three Case Study Reports (Salta, C\'ordoba, Santiago del Estero) & O5: Selection of case studies, High-res imagery analysis, land registry analysis, interviews & Deep-dive into actor dynamics, land change after fires, political interests. \\
+        
+        8 & Online Dashboard / Static Web Maps & O6: Create online dashboard or static maps & Visual dissemination tool summarizing fire-political dynamics over space and time. \\
+        
+        9 & Field Validation Reports & O6: Field visits to 1--2 provinces, Stakeholder consultations & Ground-truth validation of satellite interpretations and local political insights. \\
+        
+        10 & Policy Brief (for decision-makers and stakeholders) & O6: Organize workshops, write reports & Targeted communication tool summarizing findings for policymakers. \\
+        
+        11 & Peer-reviewed Journal Article & O6: Academic writing and journal submission & Formal scientific dissemination of project findings. \\
+        
+        12 & Workshop Materials (presentations, infographics, handouts) & O6: Organize stakeholder workshops & For two provinces or more, training on dashboard use, fire risk, political findings. \\
+        
+    \bottomrule
+    \end{longtable}
+    \caption{Mapping Products to Proposed Activities}
+    \label{tab:results}
+\end{table}
